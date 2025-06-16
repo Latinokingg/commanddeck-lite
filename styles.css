@@ -1,0 +1,124 @@
+/* Reset + Fullscreen Layout */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url(assets/HD-wallpaper-stark-garage-armor-avengers-iron-man-marvel.jpg) no-repeat center center fixed;
+  background-size:cover;
+  overflow: visible;
+  height: 100vh;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  color: #ffffff;
+  text-shadow: 0 0 8px #800000;
+  z-index: 1;
+  position: relative;
+}
+
+/* Top Row: Clock + Weather */
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Clock Container */
+.clock-container {
+  flex: 1;
+  min-width: 240px;
+}
+
+.date-text {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.clock-text {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* Weather */
+.weather-widget {
+  flex: 1;
+  min-width: 240px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #810000;
+  border-radius: 10px;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 10px #00ffff40;
+  font-size: 1.2rem;
+}
+
+/* Favorites */
+.favorites-panel {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border: 1px solid #740000;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 10px #00ffff40;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+}
+
+/* Below Favorites: Notes + Editor */
+.bottom-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Notes zone left */
+.note-zone {
+  flex: 2;
+  min-width: 300px;
+  height: 300px;
+  position: relative;
+  border: 1px dashed #00ffff50;
+  border-radius: 10px;
+}
+
+/* Editor Panel right */
+.editor-panel {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  border: 1px solid #7e0000;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  color: #00ffff;
+}
+
+.editor-panel.hidden {
+  display: none;
+}
+
+/* General Button Styles */
+.edit-btn, .note-btn {
+  padding: 10px 15px;
+  background: #00ffff65;
+  color: black;
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.2s ease;
+}
+
+.edit-btn:hover, .note-btn:hover {
+  background: #00ffffcc;
+}

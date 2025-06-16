@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CommandDeck Lite</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- 🔒 Optional glassy backdrop -->
+  <div class="dark-overlay"></div>
+
+  <!-- 🧠 Main UI -->
+  <div class="overlay">
+
+    <!-- 🔷 Top Row: Clock + Weather -->
+    <div class="top-row">
+      <div class="clock-container">
+        <div id="date" class="date-text"></div>
+        <div id="clock" class="clock-text"></div>
+      </div>
+
+      <div class="weather-widget">
+        <div id="weather-location">Loading...</div>
+        <div id="weather-temp"></div>
+        <div id="weather-desc"></div>
+      </div>
+    </div>
+
+    <!-- ⭐ Favorites Panel -->
+    <div class="favorites-panel">
+      <h2>Favorites</h2>
+      <div class="favorites-grid" id="favorites-grid"></div>
+    </div>
+
+    <!-- 🔻 Bottom Row: Notes + Editor -->
+    <div class="bottom-row">
+      <!-- Sticky Notes -->
+      <div id="note-zone" class="note-zone"></div>
+
+      <!-- Editor Panel -->
+      <div id="editor-panel" class="editor-panel hidden">
+        <h3>Manage Favorites</h3>
+        <form id="add-form">
+          <input type="text" id="new-title" placeholder="Site Title" required />
+          <input type="url" id="new-url" placeholder="https://example.com" required />
+          <input type="text" id="new-icon" placeholder="assets/logos/icon.png" required />
+          <button type="submit">Add</button>
+        </form>
+        <div id="tile-manager" class="tile-manager"></div>
+      </div>
+    </div>
+
+    <!-- ⚙️ Control Buttons -->
+    <button id="edit-toggle" class="edit-btn">Edit Favorites</button>
+    <button id="add-note-btn" class="note-btn">➕ Add Note</button>
+
+  </div>
+
+  <!-- 🧠 Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>

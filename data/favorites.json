@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Gmail",
+    "url": "https://mail.google.com",
+    "icon": "assets/logos/gmail.png"
+  },
+  {
+    "title": "ChatGPT",
+    "url": "https://chat.openai.com",
+    "icon": "assets/logos/chatgpt.svg"
+  }
+]
